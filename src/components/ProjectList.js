@@ -5,13 +5,13 @@ function ProjectList({ projects }) {
   console.log(projects);
 
   const projectList = projects.map( project => {
-    return <ProjectItem 
+    return  <ProjectItem 
               name={project.name}
               about={project.about}
               technologies={project.technologies}
               key={project.id}
-          />
-  } )
+            />
+  } );
 
   return (
     <div id="projects">
